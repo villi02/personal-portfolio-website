@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import leaf from "../../assets/img/instagramIcon.svg";
-import emotion from "../../assets/img/instagramIcon.svg";
-import editor from "../../assets/img/instagramIcon.svg";
-import chatify from "../../assets/img/instagramIcon.svg";
-import suicide from "../../assets/img/instagramIcon.svg";
-import bitsOfCode from "../../assets/img/instagramIcon.svg";
+import ProjectCard from "../components/projectPage/ProjectCards";
+import leaf from "../assets/img/instagramIcon.svg";  //"./assets/img/instagramIcon.svg";
+import emotion from "../assets/img/instagramIcon.svg";
+import editor from "../assets/img/instagramIcon.svg";
+import chatify from "../assets/img/instagramIcon.svg";
+import suicide from "../assets/img/instagramIcon.svg";
+import bitsOfCode from "../assets/img/instagramIcon.svg";
 
 function Projects() {
   return (

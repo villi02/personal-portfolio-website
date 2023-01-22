@@ -11,7 +11,7 @@ import { HashLink } from 'react-router-hash-link';
 import linkedInIcon from '../assets/img/linkedInIcon.svg';
 import instagramIcon from '../assets/img/instagramIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
-import Projects from "./projectPage/projects.js";
+import Projects from "../pages/projects.js";
 import Home from "../App";
 
 
@@ -39,7 +39,6 @@ export const NavBar = () => {
     }
 
     return (
-        <Router>
             <Navbar  expand="md" className={scrolled ? "scrolled": ""}>
                 <Container>
                     <Navbar.Brand href="/">
@@ -50,10 +49,10 @@ export const NavBar = () => {
                     </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link href="/" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('home')}>Home</Nav.Link>
-                        <Nav.Link href='#resume' className={activeLink === 'resume' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('resume')}>Resume</Nav.Link>
-                        <Nav.Link href='#projects' className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('project')}>Projects</Nav.Link>
-                        <Nav.Link href="#link" className={activeLink === 'academics' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('academics')}>Academics</Nav.Link>
+                        <Link to="/" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('home')}>Home</Link>
+                        <Link to='/resume' className={activeLink === 'resume' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('resume')}>Resume</Link>
+                        <Link to='/projects' className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('project')}>Projects</Link>
+                        <Link to="/link" className={activeLink === 'academics' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActivateLink('academics')}>Academics</Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
@@ -67,7 +66,6 @@ export const NavBar = () => {
                     </span>
                     </Navbar.Collapse>
                 </Container>
-                </Navbar>         
-        </Router>
+                </Navbar> 
     )
 }
