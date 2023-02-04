@@ -1,10 +1,14 @@
+import React from 'react';
+import { NavBar } from '../components/NavBar';
+import { Experience } from '../components/Experience';
+import colorSharp from "../assets/img/color-sharp.png"
 
-
-function Academics() {
+const Academics = () => {
     return (
-    
-        <h1> Academics</h1>
-    
+        <div>
+            <img className="background-image-left" src={colorSharp}/>
+        </div>
+            
         );
-    }
+    };
 export default Academics;

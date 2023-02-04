@@ -8,16 +8,22 @@ import Projects from './pages/projects'
 import { Footer } from './components/footer';
 import { Route, Routes,} from "react-router-dom";
 import Academics from "./pages/academics"
+import  Home  from './pages/homePage';
 
 function App() {
   return (
-      <div className="App">
-        <NavBar />
-        <Banner />
-        <Experience />
-        <HProjects />
-        <Footer />
-      </div>
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="projects" component={Projects} />
+        <Route path="academics" element={<Academics />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+      <Footer />
+    </div>
+
+    
       
   );
 }
