@@ -84,7 +84,7 @@ p.danger {
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -626,3 +626,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer a {
   margin-top: 10px;
 }
+
