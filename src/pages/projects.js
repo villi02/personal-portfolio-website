@@ -10,7 +10,7 @@ import bitsOfCode from "../assets/img/instagramIcon.svg";
 
 function Projects() {
   return (
-    /*
+    
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
@@ -89,8 +89,6 @@ function Projects() {
         </Row>
       </Container>
     </Container>
-    */
-   <h1>Projects</h1>
   );
 }
 

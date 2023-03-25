@@ -6,9 +6,9 @@ const Academics = () => {
     return (
         <div id='body'>
             
+            <h1>Academics</h1>
             <img className="background-image-left" src={colorSharp}/>
 
-            <h1>Academics</h1>
         </div>
             
         );

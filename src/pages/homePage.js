@@ -8,8 +8,8 @@ import { Footer } from '../components/footer';
 
 function Home() {
     return (
-        <div>
-            <Banner />
+        <div id='body'>
+            <Banner /> 
             <Experience />
             <HProjects />
         </div>

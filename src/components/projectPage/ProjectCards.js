@@ -1,4 +1,4 @@
-/*
+
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -21,8 +21,8 @@ function ProjectCards(props) {
         {"\n"}
         {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */
-/*
+        /* If the component contains Demo link and if it's not a Blog then, it will render the below component  */
+
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -38,4 +38,4 @@ function ProjectCards(props) {
     </Card>
   );
 }
-export default ProjectCards; */
+export default ProjectCards; 

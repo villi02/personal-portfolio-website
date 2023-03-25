@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
+// import headerImg from "../assets/img/header-img.svg"
+import headerImg from "../assets/img/intellectualLogo.png"
+
 
 export const Banner = () => {
     const toRotate = ["Machine Learning Engineer", "Backend Software Engineer", "Business Developer", "Full Stack Developer"];
