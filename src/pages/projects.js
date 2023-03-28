@@ -4,9 +4,9 @@ import ProjectCard from "../components/projectPage/ProjectCards";
 import leaf from "../assets/img/instagramIcon.svg";  //"./assets/img/instagramIcon.svg";
 import emotion from "../assets/img/instagramIcon.svg";
 import editor from "../assets/img/instagramIcon.svg";
-import chatify from "../assets/img/instagramIcon.svg";
+import demostockpic from "../assets/img/StockAppImg/demopic.png";
 import suicide from "../assets/img/instagramIcon.svg";
-import bitsOfCode from "../assets/img/instagramIcon.svg";
+import bitsOfCode from "../assets/img/projects/runeescape.png";
 
 function Projects() {
   return (
@@ -14,20 +14,19 @@ function Projects() {
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={demostockpic}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Dividend Diary"
+              description="An IOS app built for tracking dividend oriented portfolio. The app is built with Swift for the frontend, firebase for backend and financialmodelingprep API for live stock data. Built as the final project for CS50x, an online course taught by Harvard University"
+              ghLink="https://github.com/villi02/CS50x/tree/main/Final%20project/DivDiary"
             />
           </Col>
 
@@ -35,10 +34,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Wargames"
+              description="A war simulator game, allowing players to create armies from predefined solider classes. My solution for the project know as 'Wargames' for the subject IDATT2001 at NTNU"
+              ghLink="https://github.com/villi02/Wargames"
             />
           </Col>
 

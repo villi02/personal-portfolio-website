@@ -106,14 +106,14 @@ p.danger {
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 10px 0;
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -306,7 +306,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  width: 140%;
+  height: 140%;
+  
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -318,6 +322,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
         transform: translateY(-20px);
     }
 }
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -481,7 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .background-image-right {
   top: 20%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 35%;
   right: 0;
@@ -567,6 +572,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
 }
 .newsletter-bx {
   background: #FFFFFF;

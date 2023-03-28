@@ -5,11 +5,13 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import demostockpic from "../assets/img/StockAppImg/demopic.png";
 import podcastPic from "../assets/img/podcastlogo.jpeg";
-import vlogpic from "../assets/img/vlogpic.png";
-import nordkapppic from "../assets/img/nordkapppic.jpeg";
-import memegenimg from "../assets/img/memegenimg.jpeg";
-import stockimg from"../assets/img/stockimg.jpeg";
+import vlogpic from "../assets/img/projects/vlogpic.png";
+import nordkapppic from "../assets/img/projects/nordkapppic.jpeg";
+import memegenimg from "../assets/img/projects/memegenimg.jpeg";
+import stockimg from"../assets/img/projects/stockimg.jpeg";
 import { ProjectCard } from "./ProjectCard";
+import bridgecomp from "../assets/img/projects/Chinese_bridge_logo.jpg"
+import nasaPic from "../assets/img/projects/NASAlogo.png"
 
 
 export const HProjects = () => {
@@ -47,6 +49,26 @@ export const HProjects = () => {
             title: "Top Grear-like race",
             description: "A race from Bergen to Nordkapp, public transport vs private car",
             imgUrl: nordkapppic,
+        },
+
+
+    ];
+
+    const AwardsandHonors = [
+        {
+            title: "2nd - Chinese Bridge Competition Norway",
+            description: "Consisted of a speech and talent show. My talent show was a play with Philip Alsager.",
+            imgUrl: bridgecomp,
+        },
+        {
+            title: "3rd - Chinese Bridge Competition Norway",
+            description: "Consisted of a speech only, due to COVID-19",
+            imgUrl: bridgecomp,
+        },
+        {
+            title: "3rd - Hackathon with NASA JPL",
+            description: "Hackathon hosted by Start NTNU at NTNU. Found ways for the EELS-project at JPL to traverse Enceladus - a moon of Saturn. Used software provided by JPL. (ROS, C++, Python)",
+            imgUrl: nasaPic,
         },
 
 
@@ -102,7 +124,18 @@ export const HProjects = () => {
                         </Row>
                                 </Tab.Pane>
                             <Tab.Pane eventKey="third">
-                                <p>Lorem ipsum third tabpane third project</p>
+                            <Row>
+                                {
+                                AwardsandHonors.map((project, index) => {
+                                    return (
+                                    <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
+                                    )
+                                })
+                                }
+                        </Row>
                             </Tab.Pane>
                         </Tab.Content>
                         </Tab.Container> 
