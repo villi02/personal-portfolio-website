@@ -6,7 +6,11 @@ import emotion from "../assets/img/instagramIcon.svg";
 import editor from "../assets/img/instagramIcon.svg";
 import demostockpic from "../assets/img/StockAppImg/demopic.png";
 import suicide from "../assets/img/instagramIcon.svg";
-import bitsOfCode from "../assets/img/projects/runeescape.png";
+import warGamesPic from "../assets/img/projects/runeescape.png";
+import webSitePic from "../assets/img/projects/websitepic.png";
+import memegenimg from "../assets/img/projects/memegenimg.jpeg";
+import stockimg from"../assets/img/projects/stockimg.jpeg";
+
 
 function Projects() {
   return (
@@ -32,7 +36,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={warGamesPic}
               isBlog={false}
               title="Wargames"
               description="A war simulator game, allowing players to create armies from predefined solider classes. My solution for the project know as 'Wargames' for the subject IDATT2001 at NTNU"
@@ -42,34 +46,31 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={webSitePic}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Portfolio-website"
+              description="My personal portfolio website (this website). Written in JavaScript and CSS, using React and Bootstrap."
+              ghLink="https://github.com/villi02/personal-portfolio-website"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={stockimg}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Time Series AI Stock Predictor"
+              description="A project where I served as project lead for Cogito NTNU, a student organization, revolving around using AI to predict the stock prices of the Oslo Stock Exchange. Inspired by renaissance technologies, we used out-of-marked data in combination with mathematics and advanced algorithms to predict if the stock would go up or down the following day. There were two main models for the project, one LSTM and a random forest classifier."
+              ghLink="https://github.com/CogitoNTNU/Stockbot"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={memegenimg}
               isBlog={false}
               title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              description="Used an LSTM model to try to make funny one-liners. Used code/ai-model from a Stanford research project to make an application that inserted meme text onto an image to make a meme out of any picture."
+              ghLink="https://github.com/CogitoNTNU/memeAI"
             />
           </Col>
 
