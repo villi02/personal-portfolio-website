@@ -26,6 +26,14 @@
   color: var(--imp-text-color) !important;
 }
 
+.physics {
+  color: var(--imp-mathphysics-color) !important;
+}
+
+.CS {
+  color: var(--imp-cs-color) !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -45,6 +53,8 @@ html {
   );
 
   --imp-text-color: #c770f0;
+  --imp-mathphysics-color: #ec813f;
+  --imp-cs-color: #3f73ec;
   scroll-behavior: smooth;
   scroll-padding-top: 0zpx;
 }
@@ -687,6 +697,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  }
+
+  .class-code-view {
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    height: 100% !important;
+    border-top-color: white !important;
+    border-bottom-color: white !important;
   }
   
   .blog-card {
