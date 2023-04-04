@@ -34,6 +34,10 @@
   color: var(--imp-cs-color) !important;
 }
 
+.physMatCS {
+  color: var(--imp-physmatcs-color) !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -55,6 +59,7 @@ html {
   --imp-text-color: #c770f0;
   --imp-mathphysics-color: #ec813f;
   --imp-cs-color: #3f73ec;
+  --imp-physmatcs-color: #dc2020;
   scroll-behavior: smooth;
   scroll-padding-top: 0zpx;
 }
@@ -704,8 +709,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-color: transparent !important;
     opacity: 0.9 !important;
     height: 100% !important;
-    border-top-color: white !important;
-    border-bottom-color: white !important;
+    /*border-top-color: white !important;
+    border-bottom-color: white !important;*/
+  }
+
+  .project-code-lang-view {
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    height: 100% !important;
+    bottom: 40px;
+    position: relative;
+    
   }
   
   .blog-card {

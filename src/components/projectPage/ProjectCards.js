@@ -17,8 +17,8 @@ function ProjectCards(props) {
         </Card.Text>
         {props.language && props.frameworks && (
           <ListGroup style={{paddingTop:"15px", paddingBottom:"10px"}}>
-            <ListGroup.Item className="project-code-lang-view" >{props.language}</ListGroup.Item>
-            <ListGroup.Item className="project-code-lang-view">{props.frameworks}</ListGroup.Item>
+            <ListGroup.Item className="project-code-lang-view" ><strong >{props.language}</strong></ListGroup.Item>
+            <ListGroup.Item className="project-code-lang-view"><strong>{props.frameworks}</strong></ListGroup.Item>
           </ListGroup>
         )}
         

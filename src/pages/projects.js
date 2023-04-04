@@ -1,15 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/projectPage/ProjectCards";
-import leaf from "../assets/img/instagramIcon.svg";  //"./assets/img/instagramIcon.svg";
-import emotion from "../assets/img/instagramIcon.svg";
-import editor from "../assets/img/instagramIcon.svg";
 import demostockpic from "../assets/img/StockAppImg/demopic.png";
-import suicide from "../assets/img/instagramIcon.svg";
 import warGamesPic from "../assets/img/projects/runeescape.png";
 import webSitePic from "../assets/img/projects/websitepic.png";
 import memegenimg from "../assets/img/projects/memegenimg.jpeg";
 import stockimg from"../assets/img/projects/stockimg.jpeg";
+import tecnico from "../assets/img/projects/tecnico.png";
 
 
 function Projects() {
@@ -82,7 +79,17 @@ function Projects() {
               ghLink="https://github.com/villi02/Wargames"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tecnico}
+              isBlog={false}
+              title="Tournament Creator App"
+              description="The tournament creator app is an app made to help structure and make e-sport tournaments. In the app it is possible to add teams and players in the teams. When this is done you can create tournament with the teams of your choice from a range of 2 to 16 total teams. The app also has a view only mode for people to keep up with the tournament."
+              language="Java, CSS, SQLite"
+              frameworks="javaFX"
+              ghLink="https://github.com/villi02/IDATT1002_Systemutvikling_Final_Project_S2022"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>

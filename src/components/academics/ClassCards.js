@@ -16,7 +16,7 @@ function classCards(props) {
         </CardType.Text>
       </CardType.Body>
       <ListGroup>
-        <ListGroup.Item className='class-code-view'>{props.code}</ListGroup.Item>
+        <ListGroup.Item className='class-code-view' style={{borderColor:` var(--imp-${props.program}-color)`}}>{props.code}</ListGroup.Item>
       </ListGroup>
       <CardType.Body>
         <CardType.Link style={{bottom:"10px"}} href={props.weburl}>Course website</CardType.Link>
