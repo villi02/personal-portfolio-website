@@ -11,15 +11,13 @@ function classCards(props) {
       <CardType.Img variant="top" src={ntnuLogo} style={{backgroundColor:"white"}} />
       <CardType.Body>
         <CardType.Title>{props.title}</CardType.Title>
-        <CardType.Text style={{ textAlign: "justify", position: "relative", paddingBottom: "20px" }}>
-          {props.description}
-        </CardType.Text>
+        
       </CardType.Body>
       <ListGroup>
         <ListGroup.Item className='class-code-view' style={{borderColor:` var(--imp-${props.program}-color)`}}>{props.code}</ListGroup.Item>
       </ListGroup>
       <CardType.Body>
-        <CardType.Link style={{bottom:"10px"}} href={props.weburl}>Course website</CardType.Link>
+        <CardType.Link style={{bottom:"10px", position: "absolute", marginTop:"20px"}} href={props.weburl}>Course website</CardType.Link>
         {!props.hasCode && props.ghLink && (
            <Button variant="primary" href={props.ghLink} target="_blank" style={{position: "absolute" , bottom:"10px", right:"10px" }}>
            <BsGithub /> &nbsp;

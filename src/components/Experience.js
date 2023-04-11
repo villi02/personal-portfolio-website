@@ -5,6 +5,7 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import cogito from "../assets/img/Cogito_logo_hvit_a_3.png";
 
 export const Experience = () => {
     const responsive = {
@@ -39,7 +40,7 @@ export const Experience = () => {
                                 <p> Lorem Ipsum experience section firstly <br></br>Lorem Ipsum experience section secondly</p>
                                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                     <div className="item">
-                                        <img src={meter1} alt="Image" />
+                                        <img src={cogito} style={{height:"159.5px"}} alt="Image" />
                                         <h5>Machine Learing</h5>
                                     </div>
                                     <div className="item">
