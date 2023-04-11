@@ -1,15 +1,9 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
-import {
-    Link,
-} from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 import linkedInIcon from '../assets/img/linkedInIcon.svg';
 import instagramIcon from '../assets/img/instagramIcon.svg';
 import githubIcon from '../assets/img/githubIcon.svg';
-import Projects from "../pages/projects.js";
-import Home from "../App";
 
 
 

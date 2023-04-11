@@ -4,9 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import Projects from './pages/projects'
-import { Route, Routes,} from "react-router-dom";
-import Academics from "./pages/academics"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

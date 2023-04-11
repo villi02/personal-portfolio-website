@@ -1,9 +1,6 @@
 import React from 'react';
-import { Experience } from '../components/Experience';
-import colorSharp from "../assets/img/color-sharp.png"
 import { Col, Container, Row } from 'react-bootstrap';
 import ClassCard  from "../components/academics/ClassCards.js";
-import ProjectCard from "../components/projectPage/ProjectCards";
 
 const Academics = () => {
     return (
