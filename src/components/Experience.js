@@ -40,7 +40,7 @@ export const Experience = () => {
                                 <p> Lorem Ipsum experience section firstly <br></br>Lorem Ipsum experience section secondly</p>
                                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                     <div className="item">
-                                        <img src={cogito} style={{height:"159.5px"}} alt="Image" />
+                                        <img src={meter1} style={{height:"159.5px"}} alt="Image" />
                                         <h5>Machine Learing</h5>
                                     </div>
                                     <div className="item">
