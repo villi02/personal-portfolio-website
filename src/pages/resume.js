@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import { Document, Page, pdfjs } from "react-pdf";
-import pdf from "../assets/img/MinimalistSWEresume.pdf";
+import pdf from "../assets/img/busyVAVresumecopy.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
