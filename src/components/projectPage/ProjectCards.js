@@ -22,7 +22,7 @@ function ProjectCards(props) {
           </ListGroup>
         )}
         
-        <Button variant="primary" href={props.ghLink} target="_blank" style={{position: "absolute" , bottom:"10px" }}>
+        <Button variant="primary" href={props.ghLink} target="_blank" style={{position: "absolute" , bottom:"3%" }}>
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
         </Button>
