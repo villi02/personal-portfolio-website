@@ -50,7 +50,7 @@ export const Banner = () => {
                         <h1>{`I'm Vilhjalmur `}</h1>
                         <h1><span className="wrap">{text}</span></h1>
                         <p>Currently pursuing M.Sc in Math&Physics and M.Sc in Computer Science at the Norwegian University of Science and Technology (NTNU)</p>
-                        <button onClick={() => console.log('connect')}>Let's connect!<ArrowRightCircle  size={25}/></button>
+                        <button onClick={() => window.location.href = "mailto:villiarnar1@gmail.com"}>Let's connect!<ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image"/>
