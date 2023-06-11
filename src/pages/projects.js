@@ -7,6 +7,7 @@ import webSitePic from "../assets/img/projects/websitepic.png";
 import memegenimg from "../assets/img/projects/memegenimg.jpeg";
 import stockimg from"../assets/img/projects/stockimg.jpeg";
 import tecnico from "../assets/img/projects/tecnico.png";
+import doctorPic from "../assets/img/projects/doctoraiphoto.png";
 
 
 function Projects() {
@@ -21,6 +22,19 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={doctorPic}
+              isBlog={false}
+              title="Doctor AI"
+              description="Leveraged Deep Learning Computer Vision models to detect Pneumonia in X-Ray imagery, using both fine tuning of existing Computer Vision models from PyTorch, as well as Convolutional Neural Network"
+              language="Python"
+              frameworks="Tensorflow, Keras, PyTorch"
+              ghLink="https://github.com/CogitoNTNU/Doctor-AI"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={demostockpic}
@@ -39,7 +53,7 @@ function Projects() {
               title="Time Series AI Stock Predictor"
               description="A project where I served as project lead for Cogito NTNU, a student organization, revolving around using AI to predict the stock prices of the Oslo Stock Exchange. Inspired by renaissance technologies, we used out-of-marked data in combination with mathematics and advanced algorithms to predict if the stock would go up or down the following day. There were two main models for the project, one LSTM and a random forest classifier."
               language="Python"
-              frameworks="Tensorflow, Pandas, yahoo Finance API"
+              frameworks="Tensorflow, Keras, Pandas, yahoo Finance API"
               ghLink="https://github.com/CogitoNTNU/Stockbot"
             />
           </Col>
@@ -52,7 +66,7 @@ function Projects() {
               title="Meme AI"
               description="Used an LSTM model to try to make funny one-liners. Used code/ai-model from a Stanford research project to make an application that inserted meme text onto an image to make a meme out of any picture."
               language="Python"
-              frameworks="Tensorflow, Pandas"
+              frameworks="Tensorflow, Keras, Pandas"
               ghLink="https://github.com/CogitoNTNU/memeAI"
             />
           </Col>

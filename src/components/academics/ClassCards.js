@@ -7,19 +7,19 @@ import React from "react";
 
 function classCards(props) {
   return (
-    <CardType className="project-card-view" style={{ width: '18rem' }}>
-      <CardType.Img variant="top" src={ntnuLogo} style={{backgroundColor:"white"}} />
+    <CardType className="project-card-view">
       <CardType.Body>
         <CardType.Title>{props.title}</CardType.Title>
         
       </CardType.Body>
       <ListGroup>
-        <ListGroup.Item className='class-code-view' style={{borderColor:` var(--imp-${props.program}-color)`}}>{props.code}</ListGroup.Item>
+        <ListGroup.Item className='class-code-view' >{props.code}</ListGroup.Item>
+        <ListGroup.Item className='class-code-view' ><span></span>{props.prom}</ListGroup.Item>
       </ListGroup>
       <CardType.Body>
         <CardType.Link style={{bottom:"10px", position: "absolute", marginTop:"20px"}} href={props.weburl}>Course website</CardType.Link>
         {!props.hasCode && props.ghLink && (
-           <Button variant="primary" href={props.ghLink} target="_blank" style={{position: "absolute" , bottom:"10px", right:"10px" }}>
+           <Button variant="primary" href={props.ghLink} target="_blank" style={{position: "absolute" , bottom:"3%", right:"3%" }}>
            <BsGithub /> &nbsp;
            {"GitHub"}
          </Button>

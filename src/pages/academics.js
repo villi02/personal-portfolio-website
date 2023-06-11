@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ClassCard  from "../components/academics/ClassCards.js";
 
+
 const Academics = () => {
     return (
         <Container fluid className='project-section'>
@@ -13,13 +14,7 @@ const Academics = () => {
                     Here are the courses I've taken during University
                 </p>
                 <p style={{ color: "white" }}>
-                <strong className="physics">Math & Physics</strong>
-                </p>
-                <p style={{ color: "white" }}>
-                <strong className="CS">Computer Science</strong>
-                </p>
-                <p style={{ color: "white" }}>
-                <strong className="physMatCS">Math & Physics and Computer Science</strong>
+                    Desperately trying to figure this page out
                 </p>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={3} className="project-card">

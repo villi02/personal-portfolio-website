@@ -9,6 +9,7 @@ import stockimg from"../assets/img/projects/stockimg.jpeg";
 import { ProjectCard } from "./ProjectCard";
 import bridgecomp from "../assets/img/projects/Chinese_bridge_logo.jpg"
 import nasaPic from "../assets/img/projects/NASAlogo.png"
+import doctorPic from "../assets/img/projects/doctoraiphoto.png"
 
 
 export const HProjects = () => {
@@ -20,14 +21,14 @@ export const HProjects = () => {
             imgUrl: demostockpic,
         },
         {
-            title: "AI Meme Caption Generator",
-            description: "A project conducted with Cogito NTNU for spring 2022",
-            imgUrl: memegenimg,
-        },
-        {
             title: "Time Series AI Stock Predictor",
             description: "Using out-of-marked data to predict the Oslo Stock Exchange",
             imgUrl: stockimg,
+        },
+        {
+            title: "Deep Learning Medical Object Detection",
+            description: "Deep learning for detection of Pneumonia in X-Ray imagery",
+            imgUrl: doctorPic,
         },
     ];
 
