@@ -5,7 +5,7 @@ import headerImg from "../assets/img/projects/intellectualLogo.png"
 
 
 export const Banner = () => {
-    const toRotate = ["Machine Learning Engineer", "Backend Software Engineer", "Business Developer", "Full Stack Developer"];
+    const toRotate = ["Machine Learning Engineer", "Backend Software Engineer", "Business Developer", "Full Stack Developer", "AI Research Assistant"];
     const [isDeleting, setIsDeleting] = useState(0);
     const [loopNum, setLoopNum] = useState(0);
     const [text, setText] = useState('');
