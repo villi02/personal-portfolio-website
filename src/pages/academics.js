@@ -1,8 +1,13 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import ClassCard  from "../components/academics/ClassCards.js";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-
+/*
 const Academics = () => {
     return (
         <Container fluid className='project-section'>
@@ -174,18 +179,101 @@ const Academics = () => {
                             weburl="https://www.ntnu.edu/studies/courses/TTT4234#tab=omEmnet"
                         />
                     </Col>
-                    <Col md={3} className="project-card">
-                        <ClassCard
-                            title="Introduction to the engineering profession"
-                            description="The course consists of four main themes with sub-points:Ethics and technology-Technology and science history-Scientific method, science theory-Ethics (including professional ethics)-General HSEHistory of science, the role of the engineer in society-Engineering role-Interaction technology and society-Corporate Responsibility-Sustainability-Lifecycle analysis-Teamwork / Group ProcessesBasic programming, optional programming language-Use of common digital tools in their professional directionProject work-Source criticism-Innovation / change expertise-Report writing-Dissemination-Project management / economics"
-                            code="INGT1001"
-                            weburl="https://www.ntnu.edu/studies/courses/INGT1001#tab=omEmnet"
-                        />
-                    </Col>
                 </Row>
             </Container>
         </Container>
             
         );
     };
+    */
+
+    const posts = [
+        { id: 1, title: 'Post 1', content: 'Content for Post 1' },
+        { id: 2, title: 'Post 2', content: 'Content for Post 2' },
+        { id: 3, title: 'Post 3', content: 'Content for Post 3' },
+    ];
+
+    const csCourses = [
+        { title: 'Algorithms and Data Structures', code: 'IDATT2101', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2101#tab=omEmnet', ghLink: ''},
+        { title: 'Databases', code: 'IDATT2103', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2103#tab=omEmnet', ghLink: ''},
+        { title: 'Software Engineering', code: 'IDATT1002', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1002#tab=omEmnet', ghLink: ''},
+        { title: 'Programming 2', code: 'IDATT2001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2001#tab=omEmnet', ghLink: ''},
+        { title: 'Programming 1', code: 'IDATT1001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1001#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT1001_Programmering-1_H2021'}
+    ];
+    
+    const mathCourses = [
+        { title: 'Mathematics 3 - Linear algebra', code: 'TMA4115', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4115#tab=omEmnet'},
+        { title: 'Mathematics 2 - Multivariable calculus and vector analysis', code: 'TMA4105', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4105#tab=omEmnet'},
+        { title: 'Mathematics 1 - Single variable calculus', code: 'IMAT1001', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4100#tab=omEmnet'},
+        { title: 'Statistics', code: 'ISTT1003', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/ISTT1003#tab=omEmnet'},
+    ];
+
+    const physicsCourses = [
+        { title: 'Physics', code: 'TFY4125', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TFY4125#tab=omEmnet', ghLink: ''},
+        { title: 'Wave Physics and Fluid Mechanics', code: 'TFY4163', program: 'mathphysics', weburl: 'https://www.ntnu.edu/studies/courses/TFY4163#tab=omEmnet', ghLink: ''},
+        { title: 'Electricity and Magnetism', code: 'FY1003', program: 'mathphysics', weburl: 'https://www.ntnu.no/studier/emner/FY1003/2022#tab=omEmnet', ghLink: ''},
+        { title: 'Space Technology I', code: 'TTT4234', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TTT4234#tab=omEmnet', ghLink: ''},
+        { title: 'Space Technology II', code: 'TTT4235', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TTT4235#tab=omEmnet', ghLink: ''},
+    ];
+
+const Academics = () => {
+    return (
+        <Container fluid className='project-section'>
+            <Container>
+            <h1 className="project-heading">
+                    My <strong className="purple">Courses</strong>
+                </h1>
+                <p style={{ color: "white" }}>
+                    Here are the courses I've taken during University
+                </p>
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                    <Accordion className='academics-accordion'>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon />}>
+                            <Typography>Mathematics Courses</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        {mathCourses.map((mathCourses) => (
+                                <Typography className="right-align-link">
+                                    {mathCourses.title}
+                                    <a href={mathCourses.weburl}>Course page</a>
+                                </Typography>
+                        ))}
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion className='academics-accordion'>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon />}>
+                            <Typography>Physics Courses</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                        {physicsCourses.map((course) => (
+                                <Typography className="right-align-link">
+                                    {course.title}
+                                    <a href={course.weburl}>Course page</a>
+                                </Typography>
+                        ))}
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion className='academics-accordion'>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon />}>
+                            <Typography>Computer Science Courses</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            {csCourses.map((csCourses) => (
+                                <Typography className="right-align-link">
+                                    {csCourses.title},
+                                    <a href={csCourses.weburl}>Course page</a>
+                                </Typography>
+                        ))}
+                        </AccordionDetails>
+                    </Accordion>
+                </Row>
+            </Container>
+        </Container>
+    );
+
+};
+
 export default Academics;
