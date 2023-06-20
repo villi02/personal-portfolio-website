@@ -263,7 +263,7 @@ const Academics = () => {
                         <AccordionDetails>
                             {csCourses.map((csCourses) => (
                                 <Typography className="right-align-link">
-                                    {csCourses.title},
+                                    {csCourses.title}
                                     <a href={csCourses.weburl}>Course page</a>
                                 </Typography>
                         ))}
