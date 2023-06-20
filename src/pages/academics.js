@@ -1,12 +1,10 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import ClassCard  from "../components/academics/ClassCards.js";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-
 /*
 const Academics = () => {
     return (
@@ -194,11 +192,11 @@ const Academics = () => {
     ];
 
     const csCourses = [
-        { title: 'Algorithms and Data Structures', code: 'IDATT2101', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2101#tab=omEmnet', ghLink: ''},
-        { title: 'Databases', code: 'IDATT2103', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2103#tab=omEmnet', ghLink: ''},
-        { title: 'Software Engineering', code: 'IDATT1002', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1002#tab=omEmnet', ghLink: ''},
-        { title: 'Programming 2', code: 'IDATT2001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2001#tab=omEmnet', ghLink: ''},
-        { title: 'Programming 1', code: 'IDATT1001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1001#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT1001_Programmering-1_H2021'}
+        { title: 'Algorithms and Data Structures - C++', code: 'IDATT2101', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2101#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT2101_Algorithms_and_Datastructures_Fall2022'},
+        { title: 'Databases - MySQL', code: 'IDATT2103', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2103#tab=omEmnet'},
+        { title: 'Software Engineering - Java', code: 'IDATT1002', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1002#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT1002_Systemutvikling_Final_Project_S2022'},
+        { title: 'Programming 2 - Java', code: 'IDATT2001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2001#tab=omEmnet', ghLink: 'https://github.com/villi02/Wargames'},
+        { title: 'Programming 1 - Java', code: 'IDATT1001', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1001#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT1001_Programmering-1_H2021'}
     ];
     
     const mathCourses = [
@@ -209,9 +207,9 @@ const Academics = () => {
     ];
 
     const physicsCourses = [
-        { title: 'Physics', code: 'TFY4125', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TFY4125#tab=omEmnet', ghLink: ''},
-        { title: 'Wave Physics and Fluid Mechanics', code: 'TFY4163', program: 'mathphysics', weburl: 'https://www.ntnu.edu/studies/courses/TFY4163#tab=omEmnet', ghLink: ''},
-        { title: 'Electricity and Magnetism', code: 'FY1003', program: 'mathphysics', weburl: 'https://www.ntnu.no/studier/emner/FY1003/2022#tab=omEmnet', ghLink: ''},
+        { title: 'Physics', code: 'TFY4125', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TFY4125#tab=omEmnet', ghLink: 'https://github.com/paul673/Fysikklab'},
+        { title: 'Wave Physics and Fluid Mechanics', code: 'TFY4163', program: 'mathphysics', weburl: 'https://www.ntnu.edu/studies/courses/TFY4163#tab=omEmnet', ghLink: 'https://github.com/villi02/TFY4163-Bolgefysikk-og-fluidmekanikk'},
+        { title: 'Electricity and Magnetism', code: 'FY1003', program: 'mathphysics', weburl: 'https://www.ntnu.no/studier/emner/FY1003/2022#tab=omEmnet', ghLink: 'https://github.com/villi02/FY1003_Electricity_and_Magnetism'},
         { title: 'Space Technology I', code: 'TTT4234', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TTT4234#tab=omEmnet', ghLink: ''},
         { title: 'Space Technology II', code: 'TTT4235', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TTT4235#tab=omEmnet', ghLink: ''},
     ];
@@ -227,44 +225,44 @@ const Academics = () => {
                     Here are the courses I've taken during University
                 </p>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <Accordion className='academics-accordion'>
+                    <Accordion className='academics-accordion' defaultExpanded={true}>
                         <AccordionSummary
-                            expandIcon={<ArrowDropDownIcon />}>
+                            expandIcon={<ArrowDropDownIcon sx={{ color: "white" }} />}>
                             <Typography>Mathematics Courses</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                         {mathCourses.map((mathCourses) => (
                                 <Typography className="right-align-link">
                                     {mathCourses.title}
-                                    <a href={mathCourses.weburl}>Course page</a>
+                                    <a className='no-underline' href={mathCourses.weburl}>Course page</a>
                                 </Typography>
                         ))}
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion className='academics-accordion'>
+                    <Accordion className='academics-accordion' defaultExpanded={true}>
                         <AccordionSummary
-                            expandIcon={<ArrowDropDownIcon />}>
+                            expandIcon={<ArrowDropDownIcon sx={{ color: "white" }} />}>
                             <Typography>Physics Courses</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                         {physicsCourses.map((course) => (
                                 <Typography className="right-align-link">
                                     {course.title}
-                                    <a href={course.weburl}>Course page</a>
+                                    <a className='no-underline' href={course.weburl}>Course page</a>
                                 </Typography>
                         ))}
                         </AccordionDetails>
                     </Accordion>
-                    <Accordion className='academics-accordion'>
+                    <Accordion className='academics-accordion' defaultExpanded={true}>
                         <AccordionSummary
-                            expandIcon={<ArrowDropDownIcon />}>
+                            expandIcon={<ArrowDropDownIcon sx={{ color: "white" }} />}>
                             <Typography>Computer Science Courses</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             {csCourses.map((csCourses) => (
-                                <Typography className="right-align-link">
+                                <Typography  className="right-align-link">
                                     {csCourses.title}
-                                    <a href={csCourses.weburl}>Course page</a>
+                                    <a className='no-underline' href={csCourses.weburl}>Course page</a>
                                 </Typography>
                         ))}
                         </AccordionDetails>

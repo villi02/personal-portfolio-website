@@ -894,3 +894,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: space-between;
 }
+
+.no-underline {
+  text-decoration: none;
+}
