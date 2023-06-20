@@ -675,6 +675,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* --------- */
   /* Projects */
   /* --------- */
+
   .project-section {
     position: relative !important;
     padding-top: 150px !important;
@@ -873,4 +874,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   background: #fff;
   border: 2px solid #8a49a8;
+}
+
+/* --------- */
+  /* Academics */
+  /* --------- */
+
+.academics-accordion {
+  background-image: linear-gradient(
+    to right,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  ) !important;
+  background-color:black !important;
+  color: white !important;
+  }
+
+.right-align-link {
+  display: flex;
+  justify-content: space-between;
 }
