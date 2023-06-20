@@ -2,7 +2,6 @@ import CardType  from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from "react-bootstrap/Button";
 import { BsGithub } from "react-icons/bs";
-import ntnuLogo from "../../assets/img/projects/ntnulogo.png"
 import React from "react";
 
 function classCards(props) {

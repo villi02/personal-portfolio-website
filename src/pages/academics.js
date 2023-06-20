@@ -1,10 +1,12 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Button from "react-bootstrap/Button";
+import { BsGithub } from "react-icons/bs";
 /*
 const Academics = () => {
     return (
@@ -259,11 +261,14 @@ const Academics = () => {
                             <Typography>Computer Science Courses</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            {csCourses.map((csCourses) => (
-                                <Typography  className="right-align-link">
-                                    {csCourses.title}
-                                    <a className='no-underline' href={csCourses.weburl}>Course page</a>
-                                </Typography>
+                        {csCourses.map((course) => (
+                        <Typography key={course.id} className="right-align-link">
+                            <span>{course.title}</span>
+                            {!course.hasCode && course.ghLink && (
+                                <a className='no-underline-gh' href={course.ghLink}>GitHub</a>
+                            )}
+                            <a className='no-underline' href={course.weburl}>Course page</a>
+                            </Typography>
                         ))}
                         </AccordionDetails>
                     </Accordion>

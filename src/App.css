@@ -890,11 +890,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white !important;
   }
 
-.right-align-link {
-  display: flex;
-  justify-content: space-between;
-}
+  .right-align-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .right-align-link span {
+    flex-grow: 1;
+  }
+  
+  .right-align-link a:first-child {
+    margin-right: 0.5rem;
+  }
+  
+  .right-align-link a:last-child {
+    margin-left: 0.5rem;
+  }
 
 .no-underline {
   text-decoration: none;
+}
+
+.no-underline-gh {
+  text-decoration: none;
+  color: #6e5494;
 }
