@@ -233,10 +233,13 @@ const Academics = () => {
                             <Typography>Mathematics Courses</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                        {mathCourses.map((mathCourses) => (
-                                <Typography className="right-align-link">
-                                    {mathCourses.title}
-                                    <a className='no-underline' href={mathCourses.weburl}>Course page</a>
+                        {mathCourses.map((course) => (
+                                <Typography key={course.id} className="right-align-link">
+                                <span>{course.title}</span>
+                                {!course.hasCode && course.ghLink && (
+                                    <a className='no-underline-gh' href={course.ghLink}>GitHub</a>
+                                )}
+                                <a className='no-underline' href={course.weburl}>Course page</a>
                                 </Typography>
                         ))}
                         </AccordionDetails>
@@ -248,9 +251,12 @@ const Academics = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                         {physicsCourses.map((course) => (
-                                <Typography className="right-align-link">
-                                    {course.title}
-                                    <a className='no-underline' href={course.weburl}>Course page</a>
+                                <Typography key={course.id} className="right-align-link">
+                                <span>{course.title}</span>
+                                {!course.hasCode && course.ghLink && (
+                                    <a className='no-underline-gh' href={course.ghLink}>GitHub</a>
+                                )}
+                                <a className='no-underline' href={course.weburl}>Course page</a>
                                 </Typography>
                         ))}
                         </AccordionDetails>
