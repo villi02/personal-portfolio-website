@@ -20,7 +20,7 @@ return (
 
       <Row className="resume">
         <Document file={pdf} className="d-flex justify-content-center">
-          <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} renderAnnotationLayer={false} />
+          <Page pageNumber={1} scale={1.5} renderTextLayer={false} renderAnnotationLayer={false} />
         </Document>
       </Row>
 
