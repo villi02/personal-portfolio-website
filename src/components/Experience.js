@@ -37,7 +37,7 @@ export const Experience = () => {
                                 <h2>
                                     Experienced in
                                 </h2>
-                                <p> Lorem Ipsum experience section firstly <br></br>Lorem Ipsum experience section secondly</p>
+                                <p> Desperately trying to figure out what to do with this experience section <br></br>If you have any ideas please click the "let's connect" button!</p>
                                 <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                     <div className="item">
                                         <img src={meter1} style={{height:"159.5px"}} alt="Image" />
