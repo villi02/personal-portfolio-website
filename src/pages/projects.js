@@ -76,9 +76,9 @@ function Projects() {
               imgPath={webSitePic}
               isBlog={false}
               title="Portfolio-website"
-              description="My personal portfolio website (this website). Written in JavaScript and CSS, using React and Bootstrap."
+              description="My personal portfolio website (this website). Written in JavaScript and CSS, using React, Bootstrap and MaterialUI."
               language="JavaScript, CSS"
-              frameworks="React, react-bootstrap"
+              frameworks="React, react-bootstrap, MaterialUI"
               ghLink="https://github.com/villi02/personal-portfolio-website"              
             />
           </Col>
