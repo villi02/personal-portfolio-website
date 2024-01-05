@@ -194,6 +194,8 @@ const Academics = () => {
     ];
 
     const csCourses = [
+        { title: 'Operating Systems', code: 'IDATT2202', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2202/2023#tab=omEmnet'},
+        { title: 'Machine Learning - Tabular data prediction', code: 'TDT4173', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TDT4173#tab=omEmnet'},
         { title: 'Algorithms and Data Structures - C++', code: 'IDATT2101', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2101#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT2101_Algorithms_and_Datastructures_Fall2022'},
         { title: 'Databases - MySQL', code: 'IDATT2103', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT2103#tab=omEmnet'},
         { title: 'Software Engineering - Java', code: 'IDATT1002', program: 'cs', weburl: 'https://www.ntnu.edu/studies/courses/IDATT1002#tab=omEmnet', ghLink: 'https://github.com/villi02/IDATT1002_Systemutvikling_Final_Project_S2022'},
@@ -202,13 +204,16 @@ const Academics = () => {
     ];
     
     const mathCourses = [
+        { title: 'Mathematics 4K - Complex analysis, differential equations and Fourier analysis', code: 'TMA4120', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4120#tab=omEmnet'},
         { title: 'Mathematics 3 - Linear algebra', code: 'TMA4115', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4115#tab=omEmnet'},
         { title: 'Mathematics 2 - Multivariable calculus and vector analysis', code: 'TMA4105', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4105#tab=omEmnet'},
         { title: 'Mathematics 1 - Single variable calculus', code: 'IMAT1001', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4100#tab=omEmnet'},
+        { title: 'Discrete Mathematics', code: 'TMA4140', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TMA4140#tab=omEmnet'},
         { title: 'Statistics', code: 'ISTT1003', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/ISTT1003#tab=omEmnet'},
     ];
 
     const physicsCourses = [
+        { title: 'Introduction to Quantum Physics', code: 'TFY4215', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TFY4215#tab=omEmnet'},
         { title: 'Physics', code: 'TFY4125', program: 'physmatcs', weburl: 'https://www.ntnu.edu/studies/courses/TFY4125#tab=omEmnet', ghLink: 'https://github.com/paul673/Fysikklab'},
         { title: 'Wave Physics and Fluid Mechanics', code: 'TFY4163', program: 'mathphysics', weburl: 'https://www.ntnu.edu/studies/courses/TFY4163#tab=omEmnet', ghLink: 'https://github.com/villi02/TFY4163-Bolgefysikk-og-fluidmekanikk'},
         { title: 'Electricity and Magnetism', code: 'FY1003', program: 'mathphysics', weburl: 'https://www.ntnu.no/studier/emner/FY1003/2022#tab=omEmnet', ghLink: 'https://github.com/villi02/FY1003_Electricity_and_Magnetism'},
